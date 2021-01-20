@@ -24,7 +24,7 @@ if (empty($_POST["message"])) {
 }
 
 // Replace your email 
-$EmailTo = "lalcinay@Gmail.com "; //Replace email with want to deliver emails
+$EmailTo = "lalcinay@gmail.com"; //Replace email with want to deliver emails
 $Subject = "New message from $name";
 
 // prepare email body text
