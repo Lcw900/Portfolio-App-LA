@@ -3221,3 +3221,11 @@
     .fa-caret-right:before:hover {
         color: #000;
     }
+    
+    .modal-content {
+        height: calc(100vh - 57px) !important;
+    }
+    
+    .pdf__viewer {
+        height: calc(100vh - 220px);
+    }
