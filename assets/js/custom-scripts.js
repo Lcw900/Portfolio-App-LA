@@ -1,5 +1,33 @@
 (function($) {
 
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [
+            "<i class='fa fa-caret-left'></i>",
+            "<i class='fa fa-caret-right'></i>"
+        ],
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+    function show() {
+        var iframe1 = document.getElementById('iframepdf');
+        iframe1.style.display = 'block';
+    }
+
     $(document).ready(function() {
         $(".pdf").click(function() {
             $.fancybox({
@@ -346,372 +374,6 @@
         .append('<i class="fa fa-circle"></i>');
 
     });
-
-
-
-    /*
-  
-    |=================
-  
-    | Portfolio mixin
-  
-    |================
-  
-    */
-
-    $('#portfolio-item').mixItUp();
-
-
-
-    /*
-  
-    |=================
-  
-    | Client review
-  
-    |================
-  
-    */
-
-    $('#mh-client-review').owlCarousel({
-
-        loop: false,
-
-        responsiveClass: true,
-
-        nav: true,
-
-        autoplay: false,
-
-        smartSpeed: 450,
-
-        stopOnHover: true,
-
-        animateIn: 'slideInRight',
-
-        animateOut: 'slideOutLeft',
-
-        autoplayHoverPause: true,
-
-        responsive: {
-
-            0: {
-
-                items: 1,
-
-            },
-
-            768: {
-
-                items: 2,
-
-            },
-
-            1170: {
-
-                items: 3,
-
-            }
-
-        }
-
-    });
-
-
-
-    /*
-  
-    |=================
-  
-    | Project review slide
-  
-    |================
-  
-    */
-
-    $('.mh-project-testimonial').owlCarousel({
-
-        loop: true,
-
-        responsiveClass: true,
-
-        nav: false,
-
-        dots: false,
-
-        autoplay: true,
-
-        smartSpeed: 450,
-
-        stopOnHover: true,
-
-        animateIn: 'slideInRight',
-
-        animateOut: 'slideOutLeft',
-
-        autoplayHoverPause: true,
-
-        pagination: false,
-
-        responsive: {
-
-            0: {
-
-                items: 1,
-
-            },
-
-            768: {
-
-                items: 1,
-
-            },
-
-            1170: {
-
-                items: 1,
-
-            }
-
-        }
-
-    });
-
-
-
-    /*
-  
-    |=================
-  
-    | Single Project review
-  
-    |================
-  
-    */
-
-    $('#single-project').owlCarousel({
-
-        loop: false,
-
-        responsiveClass: true,
-
-        nav: false,
-
-        dots: true,
-
-        autoplay: false,
-
-        smartSpeed: 450,
-
-        stopOnHover: true,
-
-        animateIn: 'slideInRight',
-
-        animateOut: 'slideOutLeft',
-
-        autoplayHoverPause: true,
-
-        pagination: false,
-
-        responsive: {
-
-            0: {
-
-                items: 1,
-
-            },
-
-            768: {
-
-                items: 1,
-
-            },
-
-            1170: {
-
-                items: 1,
-
-            }
-
-        }
-
-    });
-
-
-
-    /*
-  
-    |=================
-  
-    | Project review slide
-  
-    |================
-  
-    */
-
-    $('.mh-single-project-slide-by-side').owlCarousel({
-
-        loop: false,
-
-        responsiveClass: true,
-
-        nav: true,
-
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-
-        dots: false,
-
-        autoplay: false,
-
-        smartSpeed: 450,
-
-        stopOnHover: true,
-
-        animateIn: 'slideInRight',
-
-        animateOut: 'slideOutLeft',
-
-        autoplayHoverPause: true,
-
-        pagination: false,
-
-        responsive: {
-
-            0: {
-
-                items: 1,
-
-            },
-
-            768: {
-
-                items: 1,
-
-            },
-
-            1170: {
-
-                items: 1,
-
-            }
-
-        }
-
-    });
-
-
-
-    /*
-  
-    |=================
-  
-    | Single client review
-  
-    |================
-  
-    */
-
-    $('#mh-single-client-review').owlCarousel({
-
-        loop: false,
-
-        responsiveClass: true,
-
-        nav: true,
-
-        autoplay: false,
-
-        smartSpeed: 450,
-
-        stopOnHover: true,
-
-        animateIn: 'slideInRight',
-
-        animateOut: 'slideOutLeft',
-
-        autoplayHoverPause: true,
-
-        responsive: {
-
-            0: {
-
-                items: 1,
-
-            },
-
-            768: {
-
-                items: 1,
-
-            },
-
-            1170: {
-
-                items: 1,
-
-            }
-
-        }
-
-    });
-
-
-
-    /*
-  
-    |=================
-  
-    | Clint review slide
-  
-    |================
-  
-    */
-
-    $('#mh-2-client-review').owlCarousel({
-
-        loop: false,
-
-        responsiveClass: true,
-
-        nav: true,
-
-        autoplay: false,
-
-        smartSpeed: 450,
-
-        stopOnHover: true,
-
-        animateIn: 'slideInRight',
-
-        animateOut: 'slideOutLeft',
-
-        autoplayHoverPause: true,
-
-        responsive: {
-
-            0: {
-
-                items: 1,
-
-            },
-
-            768: {
-
-                items: 2,
-
-            },
-
-            1170: {
-
-                items: 2,
-
-            }
-
-        }
-
-    });
-
-
 
 
 
