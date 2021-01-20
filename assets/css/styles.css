@@ -1079,200 +1079,86 @@
         z-index: 9999999;
     }
     
-    .section-loader .loading {
+    .section-loader .preloaderImage {
         position: absolute;
-        left: 49%;
-        top: 75%;
-        width: 100%;
-        height: 100%;
+        left: 50%;
+        top: 49%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
     
-    @keyframes a-lb {
-        0% {
-            transform: translateX(-300px)
-        }
-        5% {
-            transform: translateX(-240px)
-        }
-        15% {
-            transform: translateX(-30px)
-        }
-        25% {
-            transform: translateX(-30px)
-        }
-        30% {
-            transform: translateX(-20px)
-        }
-        45% {
-            transform: translateX(-20px)
-        }
-        50% {
-            transform: translateX(-15px)
-        }
-        65% {
-            transform: translateX(-15px)
-        }
-        70% {
-            transform: translateX(-10px)
-        }
-        95% {
-            transform: translateX(-10px)
-        }
-        100% {
-            transform: translateX(-5px)
-        }
-    }
-    
-    @keyframes a-s {
-        100% {
-            opacity: 1
-        }
-    }
-    
-    @keyframes a-h {
-        100% {
-            opacity: 0
-        }
-    }
-    
-    @keyframes a-nt {
-        100% {
-            transform: none
-        }
-    }
-    
-    @keyframes a-e {
-        43% {
-            animation-timing-function: cubic-bezier(.8, 0, .2, 1);
-            transform: scale(.75)
-        }
-        60% {
-            animation-timing-function: cubic-bezier(.8, 0, 1, 1);
-            transform: translateY(-16px)
-        }
-        77% {
-            animation-timing-function: cubic-bezier(.16, 0, .2, 1);
-            transform: none
-        }
-        89% {
-            animation-timing-function: cubic-bezier(.8, 0, 1, 1);
-            transform: translateY(-5px)
-        }
-        100% {
-            transform: none
-        }
-    }
-    
-    @keyframes a-ef {
-        24% {
-            animation-timing-function: cubic-bezier(.8, 0, .6, 1);
-            transform: scaleY(.42)
-        }
-        52% {
-            animation-timing-function: cubic-bezier(.63, 0, .2, 1);
-            transform: scaleY(.98)
-        }
-        83% {
-            animation-timing-function: cubic-bezier(.8, 0, .84, 1);
-            transform: scaleY(.96)
-        }
-        100% {
-            transform: none
-        }
-    }
-    
-    @keyframes a-efs {
-        24% {
-            animation-timing-function: cubic-bezier(.8, 0, .6, 1);
-            opacity: .3
-        }
-        52% {
-            animation-timing-function: cubic-bezier(.63, 0, .2, 1);
-            opacity: .03
-        }
-        83% {
-            animation-timing-function: cubic-bezier(.8, 0, .84, 1);
-            opacity: .05
-        }
-        100% {
-            opacity: 0
-        }
-    }
-    
-    @keyframes a-es {
-        24% {
-            animation-timing-function: cubic-bezier(.8, 0, .6, 1);
-            transform: rotate(-25deg)
-        }
-        52% {
-            animation-timing-function: cubic-bezier(.63, 0, .2, 1);
-            transform: rotate(-42.5deg)
-        }
-        83% {
-            animation-timing-function: cubic-bezier(.8, 0, .84, 1);
-            transform: rotate(-42deg)
-        }
-        100% {
-            transform: rotate(-43deg)
-        }
-    }
-    
-    .invfr {
+    .section-loader .preLoaderContainer {
         position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        width: 0;
-        height: 0;
-        border: 0
-    }
-    
-    .msgb {
-        position: absolute;
-        right: 0;
-        font-size: 15px;
-        font-weight: 800;
-        color: #000;
-        padding: 10px
-    }
-    
-    .loading-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
+        background-color: #ededed;
         width: 100%;
         height: 100vh;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        z-index: 10000;
     }
     
-    .loading-bar {
-        width: 130px;
-        height: 3px;
-        background: #dbd9d9;
-        margin-top: 30px;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .loading-bar::before {
-        content: '';
-        width: 68px;
-        height: 2px;
-        background: #0073b1;
+    .section-loader .preLoaderAnimation {
         position: absolute;
-        left: -34px;
-        animation: bluebar 1.5s infinite ease;
+        left: 50%;
+        top: 51%;
+        width: 64px;
+        height: 64px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     
-    @keyframes bluebar {
-        50% {
-            left: 96px;
+    .section-loader .preLoaderAnimation div {
+        position: absolute;
+        top: 65%;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: rgba(186, 188, 190, 0.932);
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    
+    .section-loader .preLoaderAnimation div:nth-child(1) {
+        left: 6px;
+        animation: preLoaderAnimationEllipsis1 0.6s infinite;
+    }
+    
+    .section-loader .preLoaderAnimation div:nth-child(2) {
+        left: 6px;
+        animation: preLoaderAnimationEllipsis2 0.6s infinite;
+    }
+    
+    .section-loader .preLoaderAnimation div:nth-child(3) {
+        left: 26px;
+        animation: preLoaderAnimationEllipsis2 0.6s infinite;
+    }
+    
+    .section-loader .preLoaderAnimation div:nth-child(4) {
+        left: 45px;
+        animation: preLoaderAnimationEllipsis3 0.6s infinite;
+    }
+    
+    @keyframes preLoaderAnimationEllipsis1 {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes preLoaderAnimationEllipsis3 {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+    
+    @keyframes preLoaderAnimationEllipsis2 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(19px, 0);
         }
     }
     
