@@ -26,5 +26,5 @@ const darkModeToggle = document.querySelector("#chnge"),
     },
     disableDarkMode = () => { document.body.classList.remove("dark-vertion"), localStorage.setItem("dark-vertion", null) };
 "enabled" === darkMode && enableDarkMode(), darkModeToggle.addEventListener("click", () => { "enabled" !== (darkMode = localStorage.getItem("dark-vertion")) ? enableDarkMode(): (document.body.classList.remove("dark-vertion"), localStorage.setItem("dark-vertion", null)) });
-var typed = new Typed(".type", { strings: ["Lindsey Alcinay", "Technology Expert", "Frontend Developer"], typeSpeed: 100, backSpeed: 30, loop: !0 });
+var typed = new Typed(".type", { strings: ["Lindsey Alcinay", "Technology Expert", "Front End Developer"], typeSpeed: 100, backSpeed: 30, loop: !0 });
 $(".toggle_btn").click(function() { $(this).toggleClass("active"), $(".mh-about .mh-about-inner p").toggleClass("active"), $(".mh-about .mh-about-inner .toggle_btn").remove(), document.getElementById("about_tag").style.marginTop = "40px" });
